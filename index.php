@@ -6,6 +6,12 @@
     <title>OGD Bodenübersicht</title>
     <meta name="author" content="Elias Baumgartner, Dario Romandini, Maximilian Hubrath, Michel Fäh">
     <meta name="description" content="Kartendaten über die Bodenbeschaffenheit im Thurgau">
+    <!--Leaflet Import-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!--Scripts-->
+    <script src="/src/js/index.js" defer></script>
+    <!--Stylesheet-->
 </head>
 <body>
 
@@ -14,6 +20,7 @@
     </header>
 
     <main>
+        <div id="map" style="width: 800px; height: 700px;"></div>
     </main>
 
     <footer>
