@@ -3,7 +3,7 @@
 */
 
 const ACCESS_KEY = 'YoW2syIQ4xe0ccJA';
-const API_URL = `https://map.geo.tg.ch/proxy/geofy_chsdi3/bodenuebersicht-profile_bohrungen?access_key=${ACCESS_KEY}&`;
+const API_URL = `https://map.geo.tg.ch/proxy/geofy_chsdi3/bodenuebersicht-profile_bohrungen?access_key=${ACCESS_KEY}`;
 const LAYER_NAMES = [
   'Hauptboden',
   'ubuflach_k_ob_al',
