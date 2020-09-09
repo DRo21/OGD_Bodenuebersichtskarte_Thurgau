@@ -1,0 +1,26 @@
+/*
+  Copyright (c) 2020 Dario Romandini, Michel Fäh
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  width: 100vw;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
