@@ -39,7 +39,7 @@ const LAYERS = {};
  */
 function buildStateStruct() {
   LAYER_NAMES.forEach((name, i) => {
-    visible = false;
+    let visible = false;
     if (i === 0) { // Set the first layer to be visible by default
       visible = true;
     }
