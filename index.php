@@ -22,8 +22,7 @@
 
     <main>
         <div id="sidebar">
-            <p>I am a placeholder 😎</p>
-            <select name="" id="layer-select"></select>
+            <div id="layer-check"></div>
         </div>
         <!-- Leaflet map container -->
         <div id="map"></div>

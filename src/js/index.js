@@ -58,12 +58,20 @@ function buildStateStruct() {
  * Generate all options in the layer select box
  */
 function generateLayerOptions() {
-  const SELECT = document.getElementById('layer-select');
-  LAYER_NAMES.forEach((name) => {
-    const OPTION = document.createElement('option');
-    OPTION.textContent = name;
-    OPTION.value = name;
-    SELECT.appendChild(OPTION);
+  const LEL = document.getElementById('layer-check');
+  LAYER_NAMES.forEach((name, i) => {
+    const LABEL = document.createElement('label');
+    LABEL.textContent = name;
+    LABEL.for = name;
+    const CHECK = document.createElement('input');
+    CHECK.type = 'checkbox';
+    CHECK.id = name;
+    CHECK.classList.add('CHECK');
+    if (i === 0) {
+      CHECK.checked = true;
+    }
+    LEL.appendChild(CHECK);
+    LEL.appendChild(LABEL);
   })
 }
 
@@ -80,10 +88,20 @@ function drawLayers() {
   })
 }
 
-document.getElementById('layer-select').addEventListener('change', (event) => {
-  const layerName = event.currentTarget.value;
-  LAYERS[layerName].visible = true;
-  drawLayers();
+let checkerforsharix = document.getElementById('layer-check');
+
+checkerforsharix.addEventListener('change', (event) => {
+  let checkboxes = document.getElementsByClassName('CHECK');
+  for (let i = 0; i < checkboxes.length; i+= 1) {
+    checkboxes[i].addEventListener('change', (event) => {
+      if (checkboxes[i].checked) {
+        LAYERS[checkboxes[i].id].visible = true;
+      } else {
+        LAYERS[checkboxes[i].id].visible = false;
+      }
+      drawLayers();
+    });
+  }
 });
 
 /**
