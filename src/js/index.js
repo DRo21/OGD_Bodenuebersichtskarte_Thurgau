@@ -85,17 +85,17 @@ function drawLayers() {
   });
 }
 
-document.getElementById('layer-check').addEventListener('change', () => {
-  const CHECKBOXES = document.getElementsByClassName('CHECK');
-  for (let i = 0; i < CHECKBOXES.length; i += 1) {
-    CHECKBOXES[i].addEventListener('change', () => {
+document.getElementById('layer-check').addEventListener('change', (event) => {
+  if (event.target.classList.contains('CHECK')) {
+    const CHECKBOXES = document.getElementsByClassName('CHECK');
+    for (let i = 0; i < CHECKBOXES.length; i += 1) {
       if (CHECKBOXES[i].checked) {
         LAYERS[CHECKBOXES[i].id].visible = true;
       } else {
         LAYERS[CHECKBOXES[i].id].visible = false;
       }
-      drawLayers();
-    });
+    }
+    drawLayers();
   }
 });
 
