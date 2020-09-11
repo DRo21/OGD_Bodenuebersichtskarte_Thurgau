@@ -100,7 +100,7 @@ document.getElementById('layer-check').addEventListener('change', () => {
 });
 
 document.getElementById('slider').addEventListener('change', () => {
-  const { SLIDER_VALUE } = document.getElementById('slider');
+  const SLIDER_VALUE = document.getElementById('slider').value;
   Object.values(LAYERS).forEach((layer) => {
     layer.wms.setOpacity(SLIDER_VALUE / 100);
   });
