@@ -17,15 +17,11 @@ const LAYER_NAMES = [
   'ubufixpk',
 ];
 
+// eslint-disable-next-line no-undef
 const MAP = L.map('map', {
   center: [47.55, 9.05],
-  zoom: 10
+  zoom: 10,
 });
-
-const OSM_LAYER = L.tileLayer.wms('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMAP</a> contributors',
-  opacity: 0.5
-}).addTo(MAP);
 
 // Data structure used to track which layer is currently displayed
 // Do not modify outside buildStateStruct function
@@ -45,6 +41,7 @@ function buildStateStruct() {
     }
     LAYERS[name] = {
       visible,
+      // eslint-disable-next-line no-undef
       wms: L.tileLayer.wms(API_URL, {
         layers: name,
         transparent: true,
@@ -52,7 +49,7 @@ function buildStateStruct() {
       }),
     };
   });
-};
+}
 
 /**
  * Generate all options in the layer select box
@@ -72,16 +69,8 @@ function generateLayerOptions() {
     }
     LEL.appendChild(CHECK);
     LEL.appendChild(LABEL);
-  })
+  });
 }
-
-document.getElementById('slider').addEventListener('change', (event) => {
-  let value = document.getElementById('slider').value;
-  Object.values(LAYERS).forEach((layer) => {
-    layer.wms.setOpacity(value/100);
-  })
-  drawLayers();
-});
 
 /**
  * Draw all visible layers
@@ -93,30 +82,42 @@ function drawLayers() {
     } else {
       LAYERS[layerKey].wms.remove();
     }
-  })
+  });
 }
 
-let checkerforsharix = document.getElementById('layer-check');
-
-checkerforsharix.addEventListener('change', (event) => {
-  let checkboxes = document.getElementsByClassName('CHECK');
-  for (let i = 0; i < checkboxes.length; i+= 1) {
-    checkboxes[i].addEventListener('change', (event) => {
-      if (checkboxes[i].checked) {
-        LAYERS[checkboxes[i].id].visible = true;
+document.getElementById('layer-check').addEventListener('change', () => {
+  const CHECKBOXES = document.getElementsByClassName('CHECK');
+  for (let i = 0; i < CHECKBOXES.length; i += 1) {
+    CHECKBOXES[i].addEventListener('change', () => {
+      if (CHECKBOXES[i].checked) {
+        LAYERS[CHECKBOXES[i].id].visible = true;
       } else {
-        LAYERS[checkboxes[i].id].visible = false;
+        LAYERS[CHECKBOXES[i].id].visible = false;
       }
       drawLayers();
     });
   }
 });
 
+document.getElementById('slider').addEventListener('change', () => {
+  const { SLIDER_VALUE } = document.getElementById('slider');
+  Object.values(LAYERS).forEach((layer) => {
+    layer.wms.setOpacity(SLIDER_VALUE / 100);
+  });
+  drawLayers();
+});
+
 /**
  * Main function
  */
-(function () {
+(function main() {
+  // eslint-disable-next-line no-undef
+  L.tileLayer.wms('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMAP</a> contributors',
+    opacity: 0.5,
+  }).addTo(MAP);
+
   buildStateStruct();
   generateLayerOptions();
   drawLayers();
-})();
+}());
