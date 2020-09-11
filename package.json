@@ -1,0 +1,24 @@
+{
+  "name": "ogd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DRo21/OGD_Bodenuebersichtskarte_Thurgau.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DRo21/OGD_Bodenuebersichtskarte_Thurgau/issues"
+  },
+  "homepage": "https://github.com/DRo21/OGD_Bodenuebersichtskarte_Thurgau#readme",
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
