@@ -75,6 +75,14 @@ function generateLayerOptions() {
   })
 }
 
+document.getElementById('slider').addEventListener('change', (event) => {
+  let value = document.getElementById('slider').value;
+  Object.values(LAYERS).forEach((layer) => {
+    layer.wms.setOpacity(value/100);
+  })
+  drawLayers();
+});
+
 /**
  * Draw all visible layers
  */

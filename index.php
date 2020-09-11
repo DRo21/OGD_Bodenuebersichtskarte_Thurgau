@@ -23,6 +23,7 @@
     <main>
         <div id="sidebar">
             <div id="layer-check"></div>
+            <input type="range" min="0" max="100" value="80" id="slider">
         </div>
         <!-- Leaflet map container -->
         <div id="map"></div>
