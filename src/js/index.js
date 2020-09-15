@@ -1,5 +1,5 @@
 /*
-  Copyright (c) 2020 Dario Romandini, Michel Fäh
+  Copyright (c) 2020 Dario Romandini, Michel Fäh, Elias Baumgartner
 */
 
 const ACCESS_KEY = 'YoW2syIQ4xe0ccJA';
@@ -55,7 +55,7 @@ function buildStateStruct() {
  * Generate all options in the layer select box
  */
 function generateLayerOptions() {
-  const LEL = document.getElementById('layer-check');
+  const LAYER_CHECK = document.getElementById('layer-check');
   LAYER_NAMES.forEach((name, i) => {
     const LABEL = document.createElement('label');
     LABEL.textContent = name;
@@ -67,8 +67,8 @@ function generateLayerOptions() {
     if (i === 0) {
       CHECK.checked = true;
     }
-    LEL.appendChild(CHECK);
-    LEL.appendChild(LABEL);
+    LAYER_CHECK.appendChild(CHECK);
+    LAYER_CHECK.appendChild(LABEL);
   });
 }
 
