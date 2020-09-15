@@ -56,10 +56,11 @@ function buildStateStruct() {
  */
 function generateLayerOptions() {
   const LAYER_CHECK = document.getElementById('layer-check');
+  const UL = document.createElement("UL");
+  UL.setAttribute("id", "layer-list");
+  document.getElementById("layer-check").appendChild(UL);
   LAYER_NAMES.forEach((name, i) => {
-    const LABEL = document.createElement('label');
-    LABEL.textContent = name;
-    LABEL.for = name;
+    const LI = document.createElement("LI");
     const CHECK = document.createElement('input');
     CHECK.type = 'checkbox';
     CHECK.id = name;
@@ -67,8 +68,12 @@ function generateLayerOptions() {
     if (i === 0) {
       CHECK.checked = true;
     }
-    LAYER_CHECK.appendChild(CHECK);
-    LAYER_CHECK.appendChild(LABEL);
+    LI.appendChild(CHECK);
+    const LABEL = document.createElement('label');
+    LABEL.textContent = name;
+    LABEL.for = name;
+    LI.appendChild(LABEL);
+    document.getElementById("layer-list").appendChild(LI);
   });
 }
 
