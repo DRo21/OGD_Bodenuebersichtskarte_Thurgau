@@ -23,24 +23,22 @@ const MAP = L.map('map', {
   zoom: 10,
 });
 
+const LAYER_SELECT = document.getElementById('layer-select');
+
 // Data structure used to track which layer is currently displayed
 // Do not modify outside buildStateStruct function
 // KEY: Layer name
 // Attrib visible: Boolean value if layer is displayed (true) or not (false)
 // Attrib wms: reference to leaflet WMS object
+let selectedLayer = LAYER_NAMES[0]; // Default selected layer
 const LAYERS = {};
 
 /**
  * Initialise layers object
  */
 function buildStateStruct() {
-  LAYER_NAMES.forEach((name, i) => {
-    let visible = false;
-    if (i === 0) { // Set the first layer to be visible by default
-      visible = true;
-    }
+  LAYER_NAMES.forEach((name) => {
     LAYERS[name] = {
-      visible,
       // eslint-disable-next-line no-undef
       wms: L.tileLayer.wms(API_URL, {
         layers: name,
@@ -55,25 +53,11 @@ function buildStateStruct() {
  * Generate all options in the layer select box
  */
 function generateLayerOptions() {
-  const LAYER_CHECK = document.getElementById('layer-check');
-  const UL = document.createElement("UL");
-  UL.setAttribute("id", "layer-list");
-  document.getElementById("layer-check").appendChild(UL);
-  LAYER_NAMES.forEach((name, i) => {
-    const LI = document.createElement("LI");
-    const CHECK = document.createElement('input');
-    CHECK.type = 'checkbox';
-    CHECK.id = name;
-    CHECK.classList.add('CHECK');
-    if (i === 0) {
-      CHECK.checked = true;
-    }
-    LI.appendChild(CHECK);
-    const LABEL = document.createElement('label');
-    LABEL.textContent = name;
-    LABEL.for = name;
-    LI.appendChild(LABEL);
-    document.getElementById("layer-list").appendChild(LI);
+  LAYER_NAMES.forEach((name) => {
+    const OPT = document.createElement('option');
+    OPT.textContent = name;
+    OPT.value = name;
+    LAYER_SELECT.appendChild(OPT);
   });
 }
 
@@ -82,7 +66,7 @@ function generateLayerOptions() {
  */
 function drawLayers() {
   Object.keys(LAYERS).forEach((layerKey) => {
-    if (LAYERS[layerKey].visible) {
+    if (layerKey === selectedLayer) {
       LAYERS[layerKey].wms.addTo(MAP);
     } else {
       LAYERS[layerKey].wms.remove();
@@ -90,18 +74,9 @@ function drawLayers() {
   });
 }
 
-document.getElementById('layer-check').addEventListener('change', (event) => {
-  if (event.target.classList.contains('CHECK')) {
-    const CHECKBOXES = document.getElementsByClassName('CHECK');
-    for (let i = 0; i < CHECKBOXES.length; i += 1) {
-      if (CHECKBOXES[i].checked) {
-        LAYERS[CHECKBOXES[i].id].visible = true;
-      } else {
-        LAYERS[CHECKBOXES[i].id].visible = false;
-      }
-    }
-    drawLayers();
-  }
+LAYER_SELECT.addEventListener('change', () => {
+  selectedLayer = LAYER_SELECT.value;
+  drawLayers();
 });
 
 document.getElementById('slider').addEventListener('change', () => {
@@ -109,7 +84,6 @@ document.getElementById('slider').addEventListener('change', () => {
   Object.values(LAYERS).forEach((layer) => {
     layer.wms.setOpacity(SLIDER_VALUE / 100);
   });
-  drawLayers();
 });
 
 /**
@@ -117,10 +91,7 @@ document.getElementById('slider').addEventListener('change', () => {
  */
 (function main() {
   // eslint-disable-next-line no-undef
-  L.tileLayer.wms('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMAP</a> contributors',
-    opacity: 0.5,
-  }).addTo(MAP);
+  L.tileLayer.wms('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {}).addTo(MAP);
 
   buildStateStruct();
   generateLayerOptions();
