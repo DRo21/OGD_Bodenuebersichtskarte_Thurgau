@@ -89,13 +89,28 @@ function generateLayerOptions() {
   });
 }
 
+function createLegendURL(layerName) {
+  const LEG_URL = new URL(API_URL);
+  LEG_URL.searchParams.append('service', 'WMS');
+  LEG_URL.searchParams.append('request', 'GetLegendGraphic');
+  LEG_URL.searchParams.append('layer', layerName);
+  LEG_URL.searchParams.append('styles', '');
+  LEG_URL.searchParams.append('format', 'image/png');
+  LEG_URL.searchParams.append('version', '1.3.0');
+  LEG_URL.searchParams.append('sld_version', '1.1.0');
+  return LEG_URL.href;
+}
+
 /**
  * Draw all visible layers
  */
 function drawLayers() {
+  const LEGEND = document.getElementById('legend__image');
   LAYERS.forEach((layer) => {
     if (layer.name === selectedLayer) {
       layer.wms.addTo(MAP);
+      // Get legend graphics
+      LEGEND.src = createLegendURL(layer.name);
     } else {
       layer.wms.remove();
     }

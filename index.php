@@ -24,6 +24,9 @@
         <div id="sidebar">
             <select name="" id="layer-select"></select>
             <input type="range" min="0" max="100" value="80" id="slider">
+            <div id="legend-container">
+                <img src="" id="legend__image"/>
+            </div>
         </div>
         <!-- Leaflet map container -->
         <div id="map"></div>
