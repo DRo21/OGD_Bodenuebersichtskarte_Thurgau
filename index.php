@@ -20,8 +20,8 @@
 
     <header>
         <h1>OGD Bodenübersicht</h1>
-        <img src="src/res/logo-kanton-thurgau.svg">
-        <img src="src/res/TGBar.png">
+        <img id="logo"src="src/res/logo-kanton-thurgau.svg">
+        <img id="bar" src="src/res/TGBar.png">
     </header>
 
     <main>
