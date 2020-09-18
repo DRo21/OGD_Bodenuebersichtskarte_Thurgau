@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +15,13 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/src/css/style.css">
 </head>
+
 <body>
 
     <header>
         <h1>OGD Bodenübersicht</h1>
+        <img src="src/res/logo-kanton-thurgau.svg">
+        <img src="src/res/TGBar.png">
     </header>
 
     <main>
@@ -25,7 +29,7 @@
             <select name="" id="layer-select"></select>
             <input type="range" min="0" max="100" value="80" id="slider">
             <div id="legend-container">
-                <img src="" id="legend__image"/>
+                <img src="" id="legend__image" />
             </div>
         </div>
         <!-- Leaflet map container -->
@@ -37,4 +41,5 @@
     </footer>
 
 </body>
+
 </html>
