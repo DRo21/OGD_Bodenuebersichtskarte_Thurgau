@@ -1,0 +1,68 @@
+{
+    "header": {
+        "title": {
+            "de": "OGD Bodenübersicht",
+            "fr": "OGD Aperçu des étages",
+            "it": "OGD Panoramica del piano",
+            "en": "OGD Floor overview"
+        }
+    },
+    "legends": {
+        "0": [
+            {
+                "label": {
+                    "de": "ES1 - kaum empfindlich",
+                    "fr": "ES1 - à peine sensible",
+                    "it": "ES1 - appena sensibile",
+                    "en": "ES1 - hardly sensitive"
+                },
+                "icon": "label_green_0"
+            },
+            {
+                "label": {
+                    "de": "ES2 - schwach empfindlich",
+                    "fr": "ES1 - à peine sensible",
+                    "it": "ES1 - appena sensibile",
+                    "en": "ES1 - hardly sensitive"
+                },
+                "icon": "label_purple"
+            },
+            {
+                "label": {
+                    "de": "ES3 - normal empfindlich",
+                    "fr": "ES1 - à peine sensible",
+                    "it": "ES1 - appena sensibile",
+                    "en": "ES1 - hardly sensitive"
+                },
+                "icon": "label_yellow_0"
+            },
+            {
+                "label": {
+                    "de": "ES4 - stark empfindlich",
+                    "fr": "ES1 - à peine sensible",
+                    "it": "ES1 - appena sensibile",
+                    "en": "ES1 - hardly sensitive"
+                },
+                "icon": "label_orange"
+            },
+            {
+                "label": {
+                    "de": "ES5 - extrem empfindlich",
+                    "fr": "ES1 - à peine sensible",
+                    "it": "ES1 - appena sensibile",
+                    "en": "ES1 - hardly sensitive"
+                },
+                "icon": "label_pink"
+            },
+            {
+                "label": {
+                    "de": "k.a.",
+                    "fr": "ES1 - à peine sensible",
+                    "it": "ES1 - appena sensibile",
+                    "en": "ES1 - hardly sensitive"
+                },
+                "icon": "label_white"
+            }
+        ]
+    }
+}

@@ -1,10 +1,31 @@
+<?php
+
+$validLangs = ['de', 'fr', 'it', 'en'];
+
+// Check if language paramter exists if not default lang is de.
+// If it set to an unsupported language then return
+// 422 http response code
+$lang = 'de';
+if (isset($_GET['lang'])) {
+    $lang = $_GET['lang'];
+    if (!in_array($lang, $validLangs)) {
+        http_response_code(422);
+        die();
+    }
+}
+
+$localsFile = file_get_contents("./lang/lang.json");
+$locals = json_decode($localsFile, true);
+
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OGD Bodenübersicht</title>
+    <title><?php echo $locals["header"]["title"][$lang]; ?></title>
     <meta name="author" content="Elias Baumgartner, Dario Romandini, Maximilian Hubrath, Michel Fäh">
     <meta name="description" content="Kartendaten über die Bodenbeschaffenheit im Thurgau">
     <!-- Leaflet Import -->
@@ -19,7 +40,7 @@
 <body>
 
     <header>
-        <h1>OGD Bodenübersicht</h1>
+        <h1><?php echo $locals["header"]["title"][$lang]; ?></h1>
         <img id="logo"src="src/res/logo-kanton-thurgau.svg">
         <img id="bar" src="src/res/TGBar.png">
     </header>
