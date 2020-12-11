@@ -8,8 +8,7 @@
         }
     },
     "legends": {
-        "0": [
-            {
+        "0": [{
                 "label": {
                     "de": "ES1 - kaum empfindlich",
                     "fr": "ES1 - à peine sensible",
@@ -21,47 +20,416 @@
             {
                 "label": {
                     "de": "ES2 - schwach empfindlich",
-                    "fr": "ES1 - à peine sensible",
-                    "it": "ES1 - appena sensibile",
-                    "en": "ES1 - hardly sensitive"
+                    "fr": "ES2 - faiblement sensible",
+                    "it": "ES2 - debolmente sensibile",
+                    "en": "ES2 - weakly sensitive"
                 },
                 "icon": "label_purple"
             },
             {
                 "label": {
                     "de": "ES3 - normal empfindlich",
-                    "fr": "ES1 - à peine sensible",
-                    "it": "ES1 - appena sensibile",
-                    "en": "ES1 - hardly sensitive"
+                    "fr": "ES3 - sensibilité normale",
+                    "it": "ES3 - sensibilità normale",
+                    "en": "ES3 - normal sensitive"
                 },
                 "icon": "label_yellow_0"
             },
             {
                 "label": {
                     "de": "ES4 - stark empfindlich",
-                    "fr": "ES1 - à peine sensible",
-                    "it": "ES1 - appena sensibile",
-                    "en": "ES1 - hardly sensitive"
+                    "fr": "ES4 - très sensible",
+                    "it": "ES4 - altamente sensibile",
+                    "en": "ES4 - highly sensitive"
                 },
                 "icon": "label_orange"
             },
             {
                 "label": {
                     "de": "ES5 - extrem empfindlich",
-                    "fr": "ES1 - à peine sensible",
-                    "it": "ES1 - appena sensibile",
-                    "en": "ES1 - hardly sensitive"
+                    "fr": "ES5 - extrêmement sensible",
+                    "it": "ES5 - estremamente sensibile",
+                    "en": "ES5 - extremely sensitive"
                 },
                 "icon": "label_pink"
             },
             {
                 "label": {
                     "de": "k.a.",
-                    "fr": "ES1 - à peine sensible",
-                    "it": "ES1 - appena sensibile",
-                    "en": "ES1 - hardly sensitive"
+                    "fr": "k.a.",
+                    "it": "k.a.",
+                    "en": "k.a."
                 },
                 "icon": "label_white"
+            },
+            {
+                "label": {
+                    "de": "a sehr tiefgründig",
+                    "fr": "une très profonde",
+                    "it": "molto profondo",
+                    "en": "a very profound"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "b tiefgründig",
+                    "fr": "b profond",
+                    "it": "b profondo",
+                    "en": "b profondo"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "c mässig tiefgründig",
+                    "fr": "c modérément profond",
+                    "it": "c moderatamente profondo",
+                    "en": "c moderately deep"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "d ziemlich flachgründig",
+                    "fr": "d peu profond",
+                    "it": "d poco profondo",
+                    "en": "d rather shallow"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "e flachgründig und sehr flachflachgründig",
+                    "fr": "e superficielle et très ",
+                    "it": "e poco profondo e molto ",
+                    "en": "e shallow and very shallow"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "f tiefgründig",
+                    "fr": "f profond",
+                    "it": "f profondo",
+                    "en": "f profound"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "g mässig tiefgründig",
+                    "fr": "g modérément profond",
+                    "it": "g moderatamente profondo",
+                    "en": "g moderately deep"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "h ziemlich flachgründig",
+                    "fr": "h plutôt superficielle",
+                    "it": "h piuttosto superficiale",
+                    "en": "h rather shallow"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "i flachgründig und sehr flachgründig",
+                    "fr": "i superficielle et très ",
+                    "it": "i poco profondo e molto ",
+                    "en": "i shallow and very shallow"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "k tiefgründig",
+                    "fr": "k profond",
+                    "it": "k profondo",
+                    "en": "k profondo"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "l mässig tiefgründig",
+                    "fr": "l modérément profond",
+                    "it": "l moderatamente profondo",
+                    "en": "l moderately deep"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "m ziemlich tiefgründig",
+                    "fr": "m peu profond",
+                    "it": "m poco profondo",
+                    "en": "m rather shallow"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "n flachgründig und sehr flachgründig",
+                    "fr": "n superficielle et très ",
+                    "it": "n poco profondo e molto ",
+                    "en": "n shallow and very shallow"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "o mässig flachgründig",
+                    "fr": "o modérément profond",
+                    "it": "o moderatamente profondo",
+                    "en": "o moderately deep"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "p zimelich flachgündig und flachgründig",
+                    "fr": "p peu profond",
+                    "it": "p poco profondo",
+                    "en": "p rather shallow"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "q ziemlich flachgründig",
+                    "fr": "q peu profond",
+                    "it": "q poco profondo",
+                    "en": "q rather shallow"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "r flachgründig und sehr flachgründig",
+                    "fr": "r superficielle et très profond",
+                    "it": "r poco profondo e molto  profondo",
+                    "en": "r shallow and very shallow"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "s tiefgründig",
+                    "fr": "s profond",
+                    "it": "s profondo",
+                    "en": "s profondo"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "t mässig tiefgründig",
+                    "fr": "t modérément profond",
+                    "it": "t moderatamente profondo",
+                    "en": "t moderately deep"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "u ziemlich flachgründig",
+                    "fr": "u peu profond",
+                    "it": "u poco profondo",
+                    "en": "u rather shallow"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "v mässig flachgründig",
+                    "fr": "v modérément profond",
+                    "it": "v moderatamente profondo",
+                    "en": "v moderately deep"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "w ziemlich flachgründig und flachgründig",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "x ziemlich flachgründig",
+                    "fr": "x peu profond",
+                    "it": "x poco profondo",
+                    "en": "x rather shallow"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "y flachgründig und sehr flachgründig",
+                    "fr": "y superficielle et très profond",
+                    "it": "y poco profondo e molto  profondo",
+                    "en": "y shallow and very shallow"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "z sehr flachgründig",
+                    "fr": "z très peu profond",
+                    "it": "z molto poco profondo",
+                    "en": "z very shallow"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "lehmreicher Sand",
+                    "fr": "sable argileux",
+                    "it": "sabbia argillosa",
+                    "en": "loamy sand"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "sandiger Lehm",
+                    "fr": "loam sableux",
+                    "it": "terriccio sabbioso",
+                    "en": "sandy loam"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "Lehm",
+                    "fr": "Clay",
+                    "it": "Argilla",
+                    "en": "Clay"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "toniger Lehm",
+                    "fr": "loam argileux",
+                    "it": "terriccio argilloso",
+                    "en": "clayey loam"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "lehmiger Schluff",
+                    "fr": "limon argileux",
+                    "it": "limo argilloso",
+                    "en": "loamy silt"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "Braunerde",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "Saure Braunerde",
+                    "fr": "Terre brune",
+                    "it": "Terra marrone",
+                    "en": "Brown earth"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "Fluvisol",
+                    "fr": "Fluvisol",
+                    "it": "Fluvisol",
+                    "en": "Fluvisol"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "Fahlgley",
+                    "fr": "Fahlgley",
+                    "it": "Fahlgley",
+                    "en": "Fahlgley"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "Kalkbraunerde",
+                    "fr": "Terre brune calcaire",
+                    "it": "Terra marrone calcaree",
+                    "en": "Calcareous brown earth"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "Halbmoor",
+                    "fr": "Demi-Lune",
+                    "it": "Mezzo Moro",
+                    "en": "Semi-moor"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "Regosol",
+                    "fr": "Regosol",
+                    "it": "Regosol",
+                    "en": "Regosol"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "Parabraunerde",
+                    "fr": "Para terre brune",
+                    "it": "Para terra marrone",
+                    "en": "Parabrown earth"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "Braunerde-Gley",
+                    "fr": "Gley de terre brune",
+                    "it": "Marrone terra gley",
+                    "en": "Brown earth gley"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "Buntgley",
+                    "fr": "Buntgley",
+                    "it": "Buntgley",
+                    "en": "Buntgley"
+                },
+                "icon": "label_"
+            },
+            {
+                "label": {
+                    "de": "unbekannt",
+                    "fr": "Inconnu",
+                    "it": "Sconosciuto",
+                    "en": "unknown"
+                },
+                "icon": "label_"
             }
         ]
     }
