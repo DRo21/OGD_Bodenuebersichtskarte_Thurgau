@@ -14,7 +14,7 @@ if (isset($_GET['lang'])) {
     }
 }
 
-$localsFile = file_get_contents("./lang/lang.json");
+$localsFile = file_get_contents("./data/lang.json");
 $locals = json_decode($localsFile, true);
 
 ?>
@@ -47,10 +47,26 @@ $locals = json_decode($localsFile, true);
 
     <main>
         <div id="sidebar">
-            <select name="" id="layer-select"></select>
+            <h2>Ebene</h2>
+            <select name="" id="layer-select">
+                <?php foreach($locals["layers"] as $layerName => $layer): ?>
+                <option value="<?php echo $layerName; ?>"><?php echo $layer["displayName"]; ?></option>
+                <?php endforeach; ?>
+            </select>
+            <h2>Deckkraft</h2>
             <input type="range" min="0" max="100" value="80" id="slider">
+            <h2>Legende</h2>
             <div id="legend-container">
-                <img src="" id="legend__image" />
+                <ul>
+                    <?php foreach($locals["legends"]["0"] as $legEntry):
+                        $legEntryIcon = "src/res/legend_icons/" . $legEntry["icon"] . ".svg";
+                    ?>
+                    <li>
+                        <img src="<?php echo $legEntryIcon; ?>" class="leg-img">
+                        <?php echo $legEntry["label"][$lang]; ?>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
         </div>
         <!-- Leaflet map container -->

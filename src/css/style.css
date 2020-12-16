@@ -45,3 +45,13 @@ footer {
     text-align: center;
     width: 100vw;
 }
+
+#legend-container {
+    overflow-y: scroll;
+}
+
+.leg-img {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}

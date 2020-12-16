@@ -7,15 +7,66 @@
             "en": "OGD Floor overview"
         }
     },
+    "layers": {
+        "Hauptboden": {
+            "displayName": "Hauptboden",
+            "legend": 0
+        },
+        "ubuflach_bt_al": {
+            "displayName": "Bodentyp Hauptboden Landwirtschaft",
+            "legend": 1
+        },
+        "ubuflach_k_ob_al": {
+            "displayName": "Textur Hauptboden Landwirtschaft",
+            "legend": 0
+        },
+        "ubuflach_hb": {
+            "displayName": "Wasserhaushalt Hauptboden",
+            "legend": 0
+        },
+        "ubuflach_verd": {
+            "displayName": "Verdichtungsempfindlichkeit",
+            "legend": 0
+        },
+        "Nebenboden": {
+            "displayName": "Nebenboden",
+            "legend": 0
+        },
+        "ubuflach_nb": {
+            "displayName": "Wasserhaushalt Nebenboden",
+            "legend": 0
+        },
+        "Begleitboden": {
+            "displayName": "Begleitboden",
+            "legend": 0
+        },
+        "ubuflach_bb": {
+            "displayName": "Wasserhaushalt Begleitboden",
+            "legend": 0
+        },
+        "ubuflach_re_nat": {
+            "displayName": "Bodenregionen (natürlich)",
+            "legend": 0
+        },
+        "ubuflach_re_ant": {
+            "displayName": "Bodenregionen (anthropogen)",
+            "legend": 0
+        },
+        "ubufixpk": {
+            "displayName": "Bodenprofile und Bohrungen",
+            "legend": 0
+        }
+    },
     "legends": {
-        "0": [{
+        "0": [
+            {
                 "label": {
                     "de": "ES1 - kaum empfindlich",
                     "fr": "ES1 - à peine sensible",
                     "it": "ES1 - appena sensibile",
                     "en": "ES1 - hardly sensitive"
                 },
-                "icon": "label_green_0"
+                "icon": "i34"
             },
             {
                 "label": {
@@ -24,7 +75,7 @@
                     "it": "ES2 - debolmente sensibile",
                     "en": "ES2 - weakly sensitive"
                 },
-                "icon": "label_purple"
+                "icon": "i33"
             },
             {
                 "label": {
@@ -33,7 +84,7 @@
                     "it": "ES3 - sensibilità normale",
                     "en": "ES3 - normal sensitive"
                 },
-                "icon": "label_yellow_0"
+                "icon": "i32"
             },
             {
                 "label": {
@@ -42,7 +93,7 @@
                     "it": "ES4 - altamente sensibile",
                     "en": "ES4 - highly sensitive"
                 },
-                "icon": "label_orange"
+                "icon": "i31"
             },
             {
                 "label": {
@@ -51,7 +102,7 @@
                     "it": "ES5 - estremamente sensibile",
                     "en": "ES5 - extremely sensitive"
                 },
-                "icon": "label_pink"
+                "icon": "i30"
             },
             {
                 "label": {
@@ -60,7 +111,7 @@
                     "it": "k.a.",
                     "en": "k.a."
                 },
-                "icon": "label_white"
+                "icon": "i29"
             },
             {
                 "label": {
@@ -69,7 +120,7 @@
                     "it": "molto profondo",
                     "en": "a very profound"
                 },
-                "icon": "label_"
+                "icon": "i28"
             },
             {
                 "label": {
@@ -78,7 +129,7 @@
                     "it": "b profondo",
                     "en": "b profondo"
                 },
-                "icon": "label_"
+                "icon": "i27"
             },
             {
                 "label": {
@@ -87,7 +138,7 @@
                     "it": "c moderatamente profondo",
                     "en": "c moderately deep"
                 },
-                "icon": "label_"
+                "icon": "i26"
             },
             {
                 "label": {
@@ -96,7 +147,7 @@
                     "it": "d poco profondo",
                     "en": "d rather shallow"
                 },
-                "icon": "label_"
+                "icon": "i32"
             },
             {
                 "label": {
@@ -105,7 +156,7 @@
                     "it": "e poco profondo e molto ",
                     "en": "e shallow and very shallow"
                 },
-                "icon": "label_"
+                "icon": "p1"
             },
             {
                 "label": {
@@ -114,7 +165,7 @@
                     "it": "f profondo",
                     "en": "f profound"
                 },
-                "icon": "label_"
+                "icon": "i24"
             },
             {
                 "label": {
@@ -123,7 +174,7 @@
                     "it": "g moderatamente profondo",
                     "en": "g moderately deep"
                 },
-                "icon": "label_"
+                "icon": "p6"
             },
             {
                 "label": {
@@ -132,7 +183,7 @@
                     "it": "h piuttosto superficiale",
                     "en": "h rather shallow"
                 },
-                "icon": "label_"
+                "icon": "i32"
             },
             {
                 "label": {
@@ -141,7 +192,7 @@
                     "it": "i poco profondo e molto ",
                     "en": "i shallow and very shallow"
                 },
-                "icon": "label_"
+                "icon": "p5"
             },
             {
                 "label": {
@@ -150,7 +201,7 @@
                     "it": "k profondo",
                     "en": "k profondo"
                 },
-                "icon": "label_"
+                "icon": "i22"
             },
             {
                 "label": {
@@ -159,7 +210,7 @@
                     "it": "l moderatamente profondo",
                     "en": "l moderately deep"
                 },
-                "icon": "label_"
+                "icon": "i22"
             },
             {
                 "label": {
@@ -168,7 +219,7 @@
                     "it": "m poco profondo",
                     "en": "m rather shallow"
                 },
-                "icon": "label_"
+                "icon": "i21"
             },
             {
                 "label": {
@@ -177,7 +228,7 @@
                     "it": "n poco profondo e molto ",
                     "en": "n shallow and very shallow"
                 },
-                "icon": "label_"
+                "icon": "i11"
             },
             {
                 "label": {
@@ -186,7 +237,7 @@
                     "it": "o moderatamente profondo",
                     "en": "o moderately deep"
                 },
-                "icon": "label_"
+                "icon": "i20"
             },
             {
                 "label": {
@@ -195,7 +246,7 @@
                     "it": "p poco profondo",
                     "en": "p rather shallow"
                 },
-                "icon": "label_"
+                "icon": "p3"
             },
             {
                 "label": {
@@ -204,7 +255,7 @@
                     "it": "q poco profondo",
                     "en": "q rather shallow"
                 },
-                "icon": "label_"
+                "icon": ""
             },
             {
                 "label": {
@@ -213,7 +264,7 @@
                     "it": "r poco profondo e molto  profondo",
                     "en": "r shallow and very shallow"
                 },
-                "icon": "label_"
+                "icon": ""
             },
             {
                 "label": {
@@ -222,7 +273,7 @@
                     "it": "s profondo",
                     "en": "s profondo"
                 },
-                "icon": "label_"
+                "icon": "i18"
             },
             {
                 "label": {
@@ -231,7 +282,7 @@
                     "it": "t moderatamente profondo",
                     "en": "t moderately deep"
                 },
-                "icon": "label_"
+                "icon": "p8"
             },
             {
                 "label": {
@@ -240,7 +291,7 @@
                     "it": "u poco profondo",
                     "en": "u rather shallow"
                 },
-                "icon": "label_"
+                "icon": "p8"
             },
             {
                 "label": {
@@ -249,16 +300,16 @@
                     "it": "v moderatamente profondo",
                     "en": "v moderately deep"
                 },
-                "icon": "label_"
+                "icon": "i18"
             },
             {
                 "label": {
                     "de": "w ziemlich flachgründig und flachgründig",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "w assez peu profond et peu profond",
+                    "it": "w abbastanza superficiale e superficiale",
+                    "en": "w fairly shallow and shallow"
                 },
-                "icon": "label_"
+                "icon": "p8"
             },
             {
                 "label": {
@@ -267,7 +318,7 @@
                     "it": "x poco profondo",
                     "en": "x rather shallow"
                 },
-                "icon": "label_"
+                "icon": "i17"
             },
             {
                 "label": {
@@ -276,7 +327,7 @@
                     "it": "y poco profondo e molto  profondo",
                     "en": "y shallow and very shallow"
                 },
-                "icon": "label_"
+                "icon": "p7"
             },
             {
                 "label": {
@@ -285,7 +336,7 @@
                     "it": "z molto poco profondo",
                     "en": "z very shallow"
                 },
-                "icon": "label_"
+                "icon": "i16"
             },
             {
                 "label": {
@@ -294,7 +345,7 @@
                     "it": "sabbia argillosa",
                     "en": "loamy sand"
                 },
-                "icon": "label_"
+                "icon": "i15"
             },
             {
                 "label": {
@@ -303,7 +354,7 @@
                     "it": "terriccio sabbioso",
                     "en": "sandy loam"
                 },
-                "icon": "label_"
+                "icon": "i6"
             },
             {
                 "label": {
@@ -312,7 +363,7 @@
                     "it": "Argilla",
                     "en": "Clay"
                 },
-                "icon": "label_"
+                "icon": "i3"
             },
             {
                 "label": {
@@ -321,7 +372,7 @@
                     "it": "terriccio argilloso",
                     "en": "clayey loam"
                 },
-                "icon": "label_"
+                "icon": "i12"
             },
             {
                 "label": {
@@ -330,16 +381,16 @@
                     "it": "limo argilloso",
                     "en": "loamy silt"
                 },
-                "icon": "label_"
+                "icon": "i11"
             },
             {
                 "label": {
                     "de": "Braunerde",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "Terre brune",
+                    "it": "Terra marrone",
+                    "en": "Brown earth"
                 },
-                "icon": "label_"
+                "icon": "i13"
             },
             {
                 "label": {
@@ -348,7 +399,7 @@
                     "it": "Terra marrone",
                     "en": "Brown earth"
                 },
-                "icon": "label_"
+                "icon": "i9"
             },
             {
                 "label": {
@@ -357,7 +408,7 @@
                     "it": "Fluvisol",
                     "en": "Fluvisol"
                 },
-                "icon": "label_"
+                "icon": "i33"
             },
             {
                 "label": {
@@ -366,7 +417,7 @@
                     "it": "Fahlgley",
                     "en": "Fahlgley"
                 },
-                "icon": "label_"
+                "icon": "i7"
             },
             {
                 "label": {
@@ -375,7 +426,7 @@
                     "it": "Terra marrone calcaree",
                     "en": "Calcareous brown earth"
                 },
-                "icon": "label_"
+                "icon": "i6"
             },
             {
                 "label": {
@@ -384,7 +435,7 @@
                     "it": "Mezzo Moro",
                     "en": "Semi-moor"
                 },
-                "icon": "label_"
+                "icon": "i5"
             },
             {
                 "label": {
@@ -393,7 +444,7 @@
                     "it": "Regosol",
                     "en": "Regosol"
                 },
-                "icon": "label_"
+                "icon": "i25"
             },
             {
                 "label": {
@@ -402,7 +453,7 @@
                     "it": "Para terra marrone",
                     "en": "Parabrown earth"
                 },
-                "icon": "label_"
+                "icon": "i3"
             },
             {
                 "label": {
@@ -411,7 +462,7 @@
                     "it": "Marrone terra gley",
                     "en": "Brown earth gley"
                 },
-                "icon": "label_"
+                "icon": "i2"
             },
             {
                 "label": {
@@ -420,7 +471,7 @@
                     "it": "Buntgley",
                     "en": "Buntgley"
                 },
-                "icon": "label_"
+                "icon": "i22"
             },
             {
                 "label": {
@@ -429,7 +480,108 @@
                     "it": "Sconosciuto",
                     "en": "unknown"
                 },
-                "icon": "label_"
+                "icon": "i32"
+            }
+        ],
+        "1": [
+            {
+                "label": {
+                    "de": "Braunerde",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i10"
+            },
+            {
+                "label": {
+                    "de": "Saure Braunerde",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i9"
+            },
+            {
+                "label": {
+                    "de": "Fluvisol",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i8"
+            },
+            {
+                "label": {
+                    "de": "Fahlgley",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i7"
+            },
+            {
+                "label": {
+                    "de": "Kalkbraunerde",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i7"
+            },
+            {
+                "label": {
+                    "de": "Halbmoor",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i6"
+            },
+            {
+                "label": {
+                    "de": "Regosol",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i4"
+            },
+            {
+                "label": {
+                    "de": "Parabraunerde",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i3"
+            },
+            {
+                "label": {
+                    "de": "Braunerde-Gley",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i2"
+            },
+            {
+                "label": {
+                    "de": "Buntgley",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i1"
+            },
+            {
+                "label": {
+                    "de": "unbekannt",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i0"
             }
         ]
     }

@@ -4,57 +4,18 @@
 
 const ACCESS_KEY = 'YoW2syIQ4xe0ccJA';
 const API_URL = `https://map.geo.tg.ch/proxy/geofy_chsdi3/bodenuebersicht-profile_bohrungen?access_key=${ACCESS_KEY}`;
-const LAYERS = [
-  {
-    name: 'Hauptboden',
-    displayName: 'Hauptboden',
-  },
-  {
-    name: 'ubuflach_bt_al',
-    displayName: 'Bodentyp Hauptboden Landwirtschaft',
-  },
-  {
-    name: 'ubuflach_k_ob_al',
-    displayName: 'Textur Hauptboden Landwirtschaft',
-  },
-  {
-    name: 'ubuflach_hb',
-    displayName: 'Wasserhaushalt Hauptboden',
-  },
-  {
-    name: 'ubuflach_verd',
-    displayName: 'Verdichtungsempfindlichkeit',
-  },
-  {
-    name: 'Nebenboden',
-    displayName: 'Nebenboden',
-  },
-  {
-    name: 'ubuflach_nb',
-    displayName: 'Wasserhaushalt Nebenboden',
-  },
-  {
-    name: 'Begleitboden',
-    displayName: 'Begleitboden',
-  },
-  {
-    name: 'ubuflach_bb',
-    displayName: 'Wasserhaushalt Begleitboden',
-  },
-  {
-    name: 'ubuflach_re_nat',
-    displayName: 'Bodenregionen (natürlich)',
-  },
-  {
-    name: 'ubuflach_re_ant',
-    displayName: 'Bodenregionen (anthropogen)',
-  },
-  {
-    name: 'ubufixpk',
-    displayName: 'Bodenprofile und Bohrungen',
-  },
-];
-let selectedLayer = LAYERS[0].name; // Default selected layer
+let selectedLayer = {
+  name: 'Hauptboden'
+}; // Default selected layer
+
+let lang = 'de';
+
+function getLang() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.has('lang')) {
+    lang = params.get('lang');
+  }
+}
 
 // eslint-disable-next-line no-undef
 const MAP = L.map('map', {
@@ -62,71 +23,45 @@ const MAP = L.map('map', {
   zoom: 10,
 });
 
+const legendsCont = document.getElementById('legend-container');
 const LAYER_SELECT = document.getElementById('layer-select');
 
 /**
- * Initialise wms layers
+ * Draw visible layer
  */
-function addWMSLinks() {
-  LAYERS.forEach((layer) => {
-    layer.wms = L.tileLayer.wms(API_URL, {
-      layers: layer.name,
-      transparent: true,
-      format: 'image/png',
-    });
+function drawLayer() {
+  selectedLayer.wms = L.tileLayer.wms(API_URL, {
+    layers: selectedLayer.name,
+    transparent: true,
+    format: 'image/png',
   });
+  selectedLayer.wms.addTo(MAP);
 }
 
-/**
- * Generate all options in the layer select box
- */
-function generateLayerOptions() {
-  LAYERS.forEach((layer) => {
-    const OPT = document.createElement('option');
-    OPT.textContent = layer.displayName;
-    OPT.value = layer.name;
-    LAYER_SELECT.appendChild(OPT);
+LAYER_SELECT.addEventListener('change', async () => {
+  selectedLayer.wms.remove();
+  selectedLayer.name = LAYER_SELECT.value;
+  drawLayer();
+
+  const req = await fetch(`/api.php?layer=${LAYER_SELECT.value}`, {
+    method: 'GET'
+  })
+  const json = await req.json();
+
+  const ul = document.createElement('ul');
+  json.forEach((legend) => {
+    ul.innerHTML += `
+    <li>
+      <img src="src/res/legend_icons/${legend.icon}.svg" class="leg-img">
+      ${legend.label[lang]}
+    </li>`;
   });
-}
-
-function createLegendURL(layerName) {
-  const LEG_URL = new URL(API_URL);
-  LEG_URL.searchParams.append('service', 'WMS');
-  LEG_URL.searchParams.append('request', 'GetLegendGraphic');
-  LEG_URL.searchParams.append('layer', layerName);
-  LEG_URL.searchParams.append('styles', '');
-  LEG_URL.searchParams.append('format', 'image/png');
-  LEG_URL.searchParams.append('version', '1.3.0');
-  LEG_URL.searchParams.append('sld_version', '1.1.0');
-  return LEG_URL.href;
-}
-
-/**
- * Draw all visible layers
- */
-function drawLayers() {
-  const LEGEND = document.getElementById('legend__image');
-  LAYERS.forEach((layer) => {
-    if (layer.name === selectedLayer) {
-      layer.wms.addTo(MAP);
-      // Get legend graphics
-      LEGEND.src = createLegendURL(layer.name);
-    } else {
-      layer.wms.remove();
-    }
-  });
-}
-
-LAYER_SELECT.addEventListener('change', () => {
-  selectedLayer = LAYER_SELECT.value;
-  drawLayers();
+  legendsCont.innerHTML = '';
+  legendsCont.appendChild(ul);
 });
 
-document.getElementById('slider').addEventListener('change', () => {
-  const SLIDER_VALUE = document.getElementById('slider').value;
-  Object.values(LAYERS).forEach((layer) => {
-    layer.wms.setOpacity(SLIDER_VALUE / 100);
-  });
+document.getElementById('slider').addEventListener('change', (event) => {
+  selectedLayer.wms.setOpacity(event.currentTarget.value / 100);
 });
 
 /**
@@ -135,8 +70,6 @@ document.getElementById('slider').addEventListener('change', () => {
 (function main() {
   // eslint-disable-next-line no-undef
   L.tileLayer.wms('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {}).addTo(MAP);
-
-  addWMSLinks();
-  generateLayerOptions();
-  drawLayers();
+  getLang();
+  drawLayer();
 }());
