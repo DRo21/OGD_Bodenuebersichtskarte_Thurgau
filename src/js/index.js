@@ -15,6 +15,7 @@ function getLang() {
   if (params.has('lang')) {
     lang = params.get('lang');
   }
+  langSelect.value = lang;
 }
 
 // eslint-disable-next-line no-undef
@@ -23,8 +24,16 @@ const MAP = L.map('map', {
   zoom: 10,
 });
 
-const legendsCont = document.getElementById('legend-container');
+const legendsCont = document.getElementsByClassName('sidebar__legend')[0];
+const langSelect = document.getElementById('lang-select');
 const LAYER_SELECT = document.getElementById('layer-select');
+
+langSelect.addEventListener('change', () => {
+  const lang = langSelect.value;
+  const url = new URL(window.location.href);
+  url.search = `?lang=${lang}`;
+  window.location.href = url.href;
+});
 
 /**
  * Draw visible layer
@@ -38,12 +47,8 @@ function drawLayer() {
   selectedLayer.wms.addTo(MAP);
 }
 
-LAYER_SELECT.addEventListener('change', async () => {
-  selectedLayer.wms.remove();
-  selectedLayer.name = LAYER_SELECT.value;
-  drawLayer();
-
-  const req = await fetch(`/api.php?layer=${LAYER_SELECT.value}`, {
+async function displayLegend() {
+  const req = await fetch(`/api.php?layer=${selectedLayer.name}`, {
     method: 'GET'
   })
   const json = await req.json();
@@ -51,13 +56,21 @@ LAYER_SELECT.addEventListener('change', async () => {
   const ul = document.createElement('ul');
   json.forEach((legend) => {
     ul.innerHTML += `
-    <li>
-      <img src="src/res/legend_icons/${legend.icon}.svg" class="leg-img">
-      ${legend.label[lang]}
-    </li>`;
+    <div class="leg-item">
+      <img class="leg-item__img" src="src/res/legend_icons/${legend.icon}.svg">
+      <p class="leg-item__label">${legend.label[lang]}</p>
+    </div>
+    `;
   });
   legendsCont.innerHTML = '';
   legendsCont.appendChild(ul);
+}
+
+LAYER_SELECT.addEventListener('change', async () => {
+  selectedLayer.wms.remove();
+  selectedLayer.name = LAYER_SELECT.value;
+  drawLayer();
+  displayLegend();
 });
 
 document.getElementById('slider').addEventListener('change', (event) => {
@@ -72,4 +85,5 @@ document.getElementById('slider').addEventListener('change', (event) => {
   L.tileLayer.wms('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {}).addTo(MAP);
   getLang();
   drawLayer();
+  displayLegend();
 }());

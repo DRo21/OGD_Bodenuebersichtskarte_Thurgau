@@ -7,54 +7,186 @@
             "en": "OGD Floor overview"
         }
     },
+    "sidebar": {
+        "0": {
+            "de": "Ebene",
+            "fr": "Livello",
+            "it": "Niveau",
+            "en": "Level"
+        },
+        "1": {
+            "de": "Deckkraft",
+            "fr": "Opacité",
+            "it": "Opacità",
+            "en": "Opacity"
+        },
+        "2": {
+            "de": "Legende",
+            "fr": "Légende",
+            "it": "Leggenda",
+            "en": "Legend"
+        }
+    },
+    "footer": {
+        "title": {
+            "de": "Impressum",
+            "fr": "Imprimer",
+            "it": "Impronta",
+            "en": "Imprint"
+        },
+        "desc": {
+            "de": "Die Daten auf dieser Website wurden durch OGD Schweiz und den Kanton Thurgau bereitgestellt.",
+            "fr": "Les données de ce site Internet ont été fournies par OGD Suisse et le canton de Thurgovie.",
+            "it": "I dati su questo sito web sono stati forniti da OGD Svizzera e Canton Turgovia.",
+            "en": "The data on this website were provided by OGD Switzerland and the Canton of Thurgau."
+        },
+        "link": {
+            "de": "OGD Datensatz",
+            "fr": "OGD Record",
+            "it": "OGD Disco",
+            "en": "OGD Record"
+        },
+        "label": {
+            "de": "Sprache",
+            "fr": "Langue",
+            "it": "Linguaggio",
+            "en": "Language"
+        },
+        "lang": {
+            "de": {
+                "de": "Deutsch",
+                "fr": "Allemand",
+                "it": "Tedesco",
+                "en": "German"
+            },
+            "en": {
+                "de": "Englisch",
+                "fr": "Anglais",
+                "it": "Inglese",
+                "en": "English"
+            },
+            "fr": {
+                "de": "Französisch",
+                "fr": "Français",
+                "it": "Niveau",
+                "en": "French"
+            },
+            "it": {
+                "de": "Italienisch",
+                "fr": "Italien",
+                "it": "Italiano",
+                "en": "Italian"
+            }
+        }
+    },
     "layers": {
         "Hauptboden": {
-            "displayName": "Hauptboden",
+            "displayName": {
+                "de": "Hauptboden",
+                "fr": "Étage principal",
+                "it": "Piano principale",
+                "en": "Main floor"
+            },
             "legend": 0
         },
         "ubuflach_bt_al": {
-            "displayName": "Bodentyp Hauptboden Landwirtschaft",
+            "displayName": {
+                "de": "Bodentyp Hauptboden Landwirtschaft",
+                "fr": "Type de sol principal sol agriculture",
+                "it": "Tipo di suolo terreno agricolo principale",
+                "en": "Soil type main soil agriculture"
+            },
             "legend": 1
         },
         "ubuflach_k_ob_al": {
-            "displayName": "Textur Hauptboden Landwirtschaft",
-            "legend": 0
+            "displayName": {
+                "de": "Textur Hauptboden Landwirtschaft",
+                "fr": "Texture du sol principal de l'agriculture",
+                "it": "Texture terreno principale agricoltura",
+                "en": "Texture main soil agriculture"
+            },
+            "legend": 2
         },
         "ubuflach_hb": {
-            "displayName": "Wasserhaushalt Hauptboden",
-            "legend": 0
+            "displayName": {
+                "de": "Wasserhaushalt Hauptboden",
+                "fr": "Bilan hydrique du sol principal",
+                "it": "Equilibrio idrico del suolo principale",
+                "en": "Main soil water balance"
+            },
+            "legend": 3
         },
         "ubuflach_verd": {
-            "displayName": "Verdichtungsempfindlichkeit",
-            "legend": 0
+            "displayName": {
+                "de": "Verdichtungsempfindlichkeit",
+                "fr": "Sensibilité au compactage",
+                "it": "Sensibilità alla compattazione",
+                "en": "Compaction sensitivity"
+            },
+            "legend": 4
         },
         "Nebenboden": {
-            "displayName": "Nebenboden",
-            "legend": 0
+            "displayName": {
+                "de": "Nebenboden",
+                "fr": "Étage secondaire",
+                "it": "Secondo piano",
+                "en": "Secondary floor"
+            },
+            "legend": 3
         },
         "ubuflach_nb": {
-            "displayName": "Wasserhaushalt Nebenboden",
-            "legend": 0
+            "displayName": {
+                "de": "Wasserhaushalt Nebenboden",
+                "fr": "Bilan hydrique du sol secondaire",
+                "it": "Equilibrio idrico del suolo secondario",
+                "en": "Water balance secondary soil"
+            },
+            "legend": 3
         },
         "Begleitboden": {
-            "displayName": "Begleitboden",
-            "legend": 0
+            "displayName": {
+                "de": "Begleitboden",
+                "fr": "Étage d'accompagnement",
+                "it": "Piano di accompagnamento",
+                "en": "Accompanying floor"
+            },
+            "legend": 3
         },
         "ubuflach_bb": {
-            "displayName": "Wasserhaushalt Begleitboden",
-            "legend": 0
+            "displayName": {
+                "de": "Wasserhaushalt Begleitboden",
+                "fr": "Bilan hydrique accompagnant le sol",
+                "it": "Equilibrio idrico che accompagna il suolo",
+                "en": "Water balance accompanying soil"
+            },
+            "legend": 3
         },
         "ubuflach_re_nat": {
-            "displayName": "Bodenregionen (natürlich)",
-            "legend": 0
+            "displayName": {
+                "de": "Bodenregionen (natürlich)",
+                "fr": "Régions du sol (naturel)",
+                "it": "Regioni del suolo (naturali)",
+                "en": "Soil regions (natural)"
+            },
+            "legend": 5
         },
         "ubuflach_re_ant": {
-            "displayName": "Bodenregionen (anthropogen)",
-            "legend": 0
+            "displayName": {
+                "de": "Bodenregionen (anthropogen)",
+                "fr": "Régions pédologiques (anthropiques)",
+                "it": "Regioni del suolo (antropiche)",
+                "en": "Soil regions (anthropogenic)"
+            },
+            "legend": 6
         },
         "ubufixpk": {
-            "displayName": "Bodenprofile und Bohrungen",
-            "legend": 0
+            "displayName": {
+                "de": "Bodenprofile und Bohrungen",
+                "fr": "Profils de sol et trous",
+                "it": "Profili e fori del pavimento",
+                "en": "Floor profiles and holes"
+            },
+            "legend": 7
         }
     },
     "legends": {
@@ -255,7 +387,7 @@
                     "it": "q poco profondo",
                     "en": "q rather shallow"
                 },
-                "icon": ""
+                "icon": "i24"
             },
             {
                 "label": {
@@ -264,7 +396,7 @@
                     "it": "r poco profondo e molto  profondo",
                     "en": "r shallow and very shallow"
                 },
-                "icon": ""
+                "icon": "i24"
             },
             {
                 "label": {
@@ -582,6 +714,450 @@
                     "en": ""
                 },
                 "icon": "i0"
+            }
+        ],
+        "2": [
+            {
+                "label": {
+                    "de": "lehmreicher Sand",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i15"
+            },
+            {
+                "label": {
+                    "de": "sandiger Lehm",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i6"
+            },
+            {
+                "label": {
+                    "de": "Lehm",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i3"
+            },
+            {
+                "label": {
+                    "de": "toniger Lehm",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i12"
+            },
+            {
+                "label": {
+                    "de": "lehmiger Schluff",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i11"
+            }
+        ],
+        "3": [
+            {
+                "label": {
+                    "de": "a sehr tiefgründig",
+                    "fr": "une très profonde",
+                    "it": "molto profondo",
+                    "en": "a very profound"
+                },
+                "icon": "i28"
+            },
+            {
+                "label": {
+                    "de": "b tiefgründig",
+                    "fr": "b profond",
+                    "it": "b profondo",
+                    "en": "b profondo"
+                },
+                "icon": "i27"
+            },
+            {
+                "label": {
+                    "de": "c mässig tiefgründig",
+                    "fr": "c modérément profond",
+                    "it": "c moderatamente profondo",
+                    "en": "c moderately deep"
+                },
+                "icon": "i26"
+            },
+            {
+                "label": {
+                    "de": "d ziemlich flachgründig",
+                    "fr": "d peu profond",
+                    "it": "d poco profondo",
+                    "en": "d rather shallow"
+                },
+                "icon": "i32"
+            },
+            {
+                "label": {
+                    "de": "e flachgründig und sehr flachflachgründig",
+                    "fr": "e superficielle et très ",
+                    "it": "e poco profondo e molto ",
+                    "en": "e shallow and very shallow"
+                },
+                "icon": "p1"
+            },
+            {
+                "label": {
+                    "de": "f tiefgründig",
+                    "fr": "f profond",
+                    "it": "f profondo",
+                    "en": "f profound"
+                },
+                "icon": "i24"
+            },
+            {
+                "label": {
+                    "de": "g mässig tiefgründig",
+                    "fr": "g modérément profond",
+                    "it": "g moderatamente profondo",
+                    "en": "g moderately deep"
+                },
+                "icon": "p6"
+            },
+            {
+                "label": {
+                    "de": "h ziemlich flachgründig",
+                    "fr": "h plutôt superficielle",
+                    "it": "h piuttosto superficiale",
+                    "en": "h rather shallow"
+                },
+                "icon": "i32"
+            },
+            {
+                "label": {
+                    "de": "i flachgründig und sehr flachgründig",
+                    "fr": "i superficielle et très ",
+                    "it": "i poco profondo e molto ",
+                    "en": "i shallow and very shallow"
+                },
+                "icon": "p5"
+            },
+            {
+                "label": {
+                    "de": "k tiefgründig",
+                    "fr": "k profond",
+                    "it": "k profondo",
+                    "en": "k profondo"
+                },
+                "icon": "i22"
+            },
+            {
+                "label": {
+                    "de": "l mässig tiefgründig",
+                    "fr": "l modérément profond",
+                    "it": "l moderatamente profondo",
+                    "en": "l moderately deep"
+                },
+                "icon": "i22"
+            },
+            {
+                "label": {
+                    "de": "m ziemlich tiefgründig",
+                    "fr": "m peu profond",
+                    "it": "m poco profondo",
+                    "en": "m rather shallow"
+                },
+                "icon": "i21"
+            },
+            {
+                "label": {
+                    "de": "n flachgründig und sehr flachgründig",
+                    "fr": "n superficielle et très ",
+                    "it": "n poco profondo e molto ",
+                    "en": "n shallow and very shallow"
+                },
+                "icon": "i11"
+            },
+            {
+                "label": {
+                    "de": "o mässig flachgründig",
+                    "fr": "o modérément profond",
+                    "it": "o moderatamente profondo",
+                    "en": "o moderately deep"
+                },
+                "icon": "i20"
+            },
+            {
+                "label": {
+                    "de": "p zimelich flachgündig und flachgründig",
+                    "fr": "p peu profond",
+                    "it": "p poco profondo",
+                    "en": "p rather shallow"
+                },
+                "icon": "p3"
+            },
+            {
+                "label": {
+                    "de": "q ziemlich flachgründig",
+                    "fr": "q peu profond",
+                    "it": "q poco profondo",
+                    "en": "q rather shallow"
+                },
+                "icon": "i24"
+            },
+            {
+                "label": {
+                    "de": "r flachgründig und sehr flachgründig",
+                    "fr": "r superficielle et très profond",
+                    "it": "r poco profondo e molto  profondo",
+                    "en": "r shallow and very shallow"
+                },
+                "icon": "i24"
+            },
+            {
+                "label": {
+                    "de": "s tiefgründig",
+                    "fr": "s profond",
+                    "it": "s profondo",
+                    "en": "s profondo"
+                },
+                "icon": "i18"
+            },
+            {
+                "label": {
+                    "de": "t mässig tiefgründig",
+                    "fr": "t modérément profond",
+                    "it": "t moderatamente profondo",
+                    "en": "t moderately deep"
+                },
+                "icon": "p8"
+            },
+            {
+                "label": {
+                    "de": "u ziemlich flachgründig",
+                    "fr": "u peu profond",
+                    "it": "u poco profondo",
+                    "en": "u rather shallow"
+                },
+                "icon": "p8"
+            },
+            {
+                "label": {
+                    "de": "v mässig flachgründig",
+                    "fr": "v modérément profond",
+                    "it": "v moderatamente profondo",
+                    "en": "v moderately deep"
+                },
+                "icon": "i18"
+            },
+            {
+                "label": {
+                    "de": "w ziemlich flachgründig und flachgründig",
+                    "fr": "w assez peu profond et peu profond",
+                    "it": "w abbastanza superficiale e superficiale",
+                    "en": "w fairly shallow and shallow"
+                },
+                "icon": "p8"
+            },
+            {
+                "label": {
+                    "de": "x ziemlich flachgründig",
+                    "fr": "x peu profond",
+                    "it": "x poco profondo",
+                    "en": "x rather shallow"
+                },
+                "icon": "i17"
+            },
+            {
+                "label": {
+                    "de": "y flachgründig und sehr flachgründig",
+                    "fr": "y superficielle et très profond",
+                    "it": "y poco profondo e molto  profondo",
+                    "en": "y shallow and very shallow"
+                },
+                "icon": "p7"
+            },
+            {
+                "label": {
+                    "de": "z sehr flachgründig",
+                    "fr": "z très peu profond",
+                    "it": "z molto poco profondo",
+                    "en": "z very shallow"
+                },
+                "icon": "i16"
+            }
+        ],
+        "4": [
+            {
+                "label": {
+                    "de": "ES1 - kaum empfindlich",
+                    "fr": "ES1 - à peine sensible",
+                    "it": "ES1 - appena sensibile",
+                    "en": "ES1 - hardly sensitive"
+                },
+                "icon": "i34"
+            },
+            {
+                "label": {
+                    "de": "ES2 - schwach empfindlich",
+                    "fr": "ES2 - faiblement sensible",
+                    "it": "ES2 - debolmente sensibile",
+                    "en": "ES2 - weakly sensitive"
+                },
+                "icon": "i33"
+            },
+            {
+                "label": {
+                    "de": "ES3 - normal empfindlich",
+                    "fr": "ES3 - sensibilité normale",
+                    "it": "ES3 - sensibilità normale",
+                    "en": "ES3 - normal sensitive"
+                },
+                "icon": "i32"
+            },
+            {
+                "label": {
+                    "de": "ES4 - stark empfindlich",
+                    "fr": "ES4 - très sensible",
+                    "it": "ES4 - altamente sensibile",
+                    "en": "ES4 - highly sensitive"
+                },
+                "icon": "i31"
+            },
+            {
+                "label": {
+                    "de": "ES5 - extrem empfindlich",
+                    "fr": "ES5 - extrêmement sensible",
+                    "it": "ES5 - estremamente sensibile",
+                    "en": "ES5 - extremely sensitive"
+                },
+                "icon": "i30"
+            },
+            {
+                "label": {
+                    "de": "k.a.",
+                    "fr": "k.a.",
+                    "it": "k.a.",
+                    "en": "k.a."
+                },
+                "icon": "i29"
+            }
+        ],
+        "5": [
+            {
+                "label": {
+                    "de": "R1: Ebenen und Talsohlen mit Böden aus Schotter und sandig-kiesigem Alluvium",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i7"
+            },
+            {
+                "label": {
+                    "de": "R2: Ebenen und Talsohlen mit Böden aus feinkörnigem Alluvium",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i17"
+            },
+            {
+                "label": {
+                    "de": "R3: Talmulden und Akkumulationslagen mit kolluvialen Böden",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "s2"
+            },
+            {
+                "label": {
+                    "de": "R4: Böden aus Grundmoräne",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i21"
+            },
+            {
+                "label": {
+                    "de": "R5: Böden aus lockerer Moräne",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i29"
+            },
+            {
+                "label": {
+                    "de": "R6: Drumlingebiete mit Böden aus Moräne",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "s4"
+            },
+            {
+                "label": {
+                    "de": "R7: Böden aus Moräne und Molasse",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "s3"
+            },
+            {
+                "label": {
+                    "de": "R8: Boden aus Molasse",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i20"
+            },
+            {
+                "label": {
+                    "de": "R9: Bachschuttfächer mit gemischtem Ausgangsgestein",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "i23"
+            }
+        ],
+        "6": [
+            {
+                "label": {
+                    "de": "R10: anthropogener Boden",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "s5"
+            }
+        ],
+        "7": [
+            {
+                "label": {
+                    "de": "Profil",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "s0"
+            },
+            {
+                "label": {
+                    "de": "Bohrung",
+                    "fr": "",
+                    "it": "",
+                    "en": ""
+                },
+                "icon": "s1"
             }
         ]
     }
