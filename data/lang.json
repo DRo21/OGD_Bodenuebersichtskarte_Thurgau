@@ -619,99 +619,99 @@
             {
                 "label": {
                     "de": "Braunerde",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "Terre marron",
+                    "it": "Terra marrone",
+                    "en": "Brown soil"
                 },
                 "icon": "i10"
             },
             {
                 "label": {
                     "de": "Saure Braunerde",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "Terre brune acide",
+                    "it": "Terra marrone acido",
+                    "en": "Acidic brown soil"
                 },
                 "icon": "i9"
             },
             {
                 "label": {
                     "de": "Fluvisol",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "Fluvisol",
+                    "it": "Fluvisol",
+                    "en": "Fluvisol"
                 },
                 "icon": "i8"
             },
             {
                 "label": {
                     "de": "Fahlgley",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "Fahlgley",
+                    "it": "Fahlgley",
+                    "en": "Fahlgley"
                 },
                 "icon": "i7"
             },
             {
                 "label": {
                     "de": "Kalkbraunerde",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "Terre brune calcaire",
+                    "it": "Terra marrone calcaree",
+                    "en": "Lime brown soil"
                 },
                 "icon": "i7"
             },
             {
                 "label": {
                     "de": "Halbmoor",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "Demi-amarrage",
+                    "it": "Mezza Mora",
+                    "en": "Half-moor"
                 },
                 "icon": "i6"
             },
             {
                 "label": {
                     "de": "Regosol",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "Régosol",
+                    "it": "Regosol",
+                    "en": "Regosol"
                 },
                 "icon": "i4"
             },
             {
                 "label": {
                     "de": "Parabraunerde",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "Para terre brune",
+                    "it": "Para terra marrone",
+                    "en": "Parabrown earth"
                 },
                 "icon": "i3"
             },
             {
                 "label": {
                     "de": "Braunerde-Gley",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "Gley de terre brune",
+                    "it": "Marrone terra gley",
+                    "en": "Brown earth-gley"
                 },
                 "icon": "i2"
             },
             {
                 "label": {
                     "de": "Buntgley",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "Buntgley",
+                    "it": "Buntgley",
+                    "en": "Buntgley"
                 },
                 "icon": "i1"
             },
             {
                 "label": {
                     "de": "unbekannt",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "inconnue",
+                    "it": "sconosciuto",
+                    "en": "unknown"
                 },
                 "icon": "i0"
             }
@@ -720,45 +720,45 @@
             {
                 "label": {
                     "de": "lehmreicher Sand",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "sable riche en argile",
+                    "it": "sabbia ricca di argilla",
+                    "en": "clay-rich sand"
                 },
                 "icon": "i15"
             },
             {
                 "label": {
                     "de": "sandiger Lehm",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "argile sableuse",
+                    "it": "terriccio di sabbia",
+                    "en": "sandy clay"
                 },
                 "icon": "i6"
             },
             {
                 "label": {
                     "de": "Lehm",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "Clay",
+                    "it": "Argilla",
+                    "en": "Clay"
                 },
                 "icon": "i3"
             },
             {
                 "label": {
                     "de": "toniger Lehm",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "clayey clay",
+                    "it": "terriccio argilloso",
+                    "en": "argillaceous clay"
                 },
                 "icon": "i12"
             },
             {
                 "label": {
                     "de": "lehmiger Schluff",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "argileux silt",
+                    "it": "argillosi silt",
+                    "en": "clay silt"
                 },
                 "icon": "i11"
             }
@@ -1050,81 +1050,81 @@
             {
                 "label": {
                     "de": "R1: Ebenen und Talsohlen mit Böden aus Schotter und sandig-kiesigem Alluvium",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "R1: plaines et fonds de vallée avec des sols de graviers et d'alluvions sablo-graveleuses",
+                    "it": "R1: pianure e fondovalle con terreni di ghiaia e alluvioni sabbioso-ghiaiose",
+                    "en": "R1: Plains and valley bottoms with soils of gravel and sandy-gravelly alluvium."
                 },
                 "icon": "i7"
             },
             {
                 "label": {
                     "de": "R2: Ebenen und Talsohlen mit Böden aus feinkörnigem Alluvium",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "R2: plaines et fonds de vallée avec des sols d'alluvions à grain fin",
+                    "it": "R2: pianure e fondovalle con terreni di alluvione a grana fine",
+                    "en": "R2: plains and valley bottoms with soils of fine-grained alluviu"
                 },
                 "icon": "i17"
             },
             {
                 "label": {
                     "de": "R3: Talmulden und Akkumulationslagen mit kolluvialen Böden",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "R3: Creux de vallée et couches d'accumulation avec des sols colluviaux",
+                    "it": "R3: Conche vallive e strati di accumulo con terreni colluviali",
+                    "en": "R3: Valley depressions and accumulation layers with colluvial soils."
                 },
                 "icon": "s2"
             },
             {
                 "label": {
                     "de": "R4: Böden aus Grundmoräne",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "R4: Sols de la moraine de fond",
+                    "it": "R4: Suoli di morena macinata",
+                    "en": "R4: Soils from ground moraine"
                 },
                 "icon": "i21"
             },
             {
                 "label": {
                     "de": "R5: Böden aus lockerer Moräne",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "R5 : Sols de moraine meuble",
+                    "it": "R5: Terreni di morena sciolta",
+                    "en": "R5: Soils from loose moraine"
                 },
                 "icon": "i29"
             },
             {
                 "label": {
                     "de": "R6: Drumlingebiete mit Böden aus Moräne",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "R6: Zones de Drumlin avec des sols morainiques",
+                    "it": "R6: Aree a tamburo con terreni morenici",
+                    "en": "R6: Drumlin areas with soils from moraine"
                 },
                 "icon": "s4"
             },
             {
                 "label": {
                     "de": "R7: Böden aus Moräne und Molasse",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "R7: Sols de moraine et de molasse",
+                    "it": "R7: Terreni morenici e molassa",
+                    "en": "R7: Soils from moraine and molasse"
                 },
                 "icon": "s3"
             },
             {
                 "label": {
                     "de": "R8: Boden aus Molasse",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "R8: Sol de la mélasse",
+                    "it": "R8: Suolo di molassa",
+                    "en": "R8: Soil from molasse"
                 },
                 "icon": "i20"
             },
             {
                 "label": {
                     "de": "R9: Bachschuttfächer mit gemischtem Ausgangsgestein",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "R9: ventilateurs de débris de ruisseau avec roche mère mixte",
+                    "it": "R9: fanatici dei detriti di ruscello con roccia di origine mista",
+                    "en": "R9: stream debris fans with mixed source rock."
                 },
                 "icon": "i23"
             }
@@ -1133,9 +1133,9 @@
             {
                 "label": {
                     "de": "R10: anthropogener Boden",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "R10: sol anthropique",
+                    "it": "R10: suolo antropico",
+                    "en": "R10: anthropogenic soil"
                 },
                 "icon": "s5"
             }
@@ -1144,18 +1144,18 @@
             {
                 "label": {
                     "de": "Profil",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "Profil",
+                    "it": "Profilo",
+                    "en": "Profile"
                 },
                 "icon": "s0"
             },
             {
                 "label": {
                     "de": "Bohrung",
-                    "fr": "",
-                    "it": "",
-                    "en": ""
+                    "fr": "Bore",
+                    "it": "Alesaggio",
+                    "en": "Drilling"
                 },
                 "icon": "s1"
             }
