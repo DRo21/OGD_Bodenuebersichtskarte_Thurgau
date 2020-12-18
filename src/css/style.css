@@ -11,12 +11,15 @@
 :root {
     --accent-color: #4AB1EB;
     --bg-color: white;
+    --fg-color: black;
+    --fg-sec-color: white;
     --bg-off-white: #F5F5F5;
     --bg-off-black: #4d4d4d;
 }
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--fg-color);
 }
 
 .select {
@@ -66,6 +69,7 @@ header {
     grid-area: sidebar;
     padding: 0 20px 20px 20px;
     height: 100%;
+    color: black;
 }
 
 .sidebar__title {
@@ -123,6 +127,7 @@ footer {
 .footer-cont__link {
     display: block;
     margin: 20px 0 20px 20px;
+    color: var(--accent-color);
 }
 
 .footer__copy {
@@ -131,5 +136,15 @@ footer {
     padding: 20px;
     text-align: center;
     background-color: var(--bg-off-black);
-    color: var(--bg-off-white)
+    color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --accent-color: #4AB1EB;
+        --bg-color: black;
+        --fg-color: white;
+        --bg-off-white: #272727;
+        --bg-off-black: #000000;
+    }
 }
