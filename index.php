@@ -9,7 +9,8 @@ $lang = 'de';
 if (isset($_GET['lang'])) {
     $lang = $_GET['lang'];
     if (!in_array($lang, $validLangs)) {
-        http_response_code(422);
+        http_response_code(404);
+        echo "<h1>404 page not found<h1>";
         die();
     }
 }
@@ -48,14 +49,14 @@ $locals = json_decode($localsFile, true);
 
     <header>
         <h1 class="header__title"><?php echo $locals["header"]["title"][$lang]; ?></h1>
-        <img class="header__logo"src="src/res/logo-kanton-thurgau.svg">
+        <img class="header__logo" src="src/res/logo-kanton-thurgau.svg">
     </header>
 
     <div class="sidebar">
         <h3 class="sidebar__title"><?php echo $locals["sidebar"]["0"][$lang]; ?></h3>
         <select id="layer-select" class="select select--block">
-            <?php foreach($locals["layers"] as $layerName => $layer): ?>
-            <option value="<?php echo $layerName; ?>"><?php echo $layer["displayName"][$lang]; ?></option>
+            <?php foreach ($locals["layers"] as $layerName => $layer) : ?>
+                <option value="<?php echo $layerName; ?>"><?php echo $layer["displayName"][$lang]; ?></option>
             <?php endforeach; ?>
         </select>
         <h3 class="sidebar__title"><?php echo $locals["sidebar"]["1"][$lang]; ?></h3>
